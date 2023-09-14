@@ -15,6 +15,6 @@ public class BeanFactoryTest {
         reader.loadBeanDefinitions("beans.xml") ;
         //
         UserService userService = (UserServiceImpl)beanFactory.getBean("userService");
-        System.out.println(userService);
+        System.out.println("独立实例化 UserService对象 :" + userService);
     }
 }
